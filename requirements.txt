@@ -1,0 +1,51 @@
+# requirements.txt
+
+# --- Web Framework ---
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+
+# --- Database / Supabase ---
+supabase==2.5.0
+asyncpg==0.29.0
+
+# --- Auth ---
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+httpx==0.27.0                   # Google OAuth HTTP calls
+
+# --- Validation ---
+pydantic==2.7.1
+pydantic-settings==2.3.0
+email-validator==2.1.1
+python-multipart==0.0.9         # file upload form parsing
+
+# --- OCR ---
+pytesseract==0.3.10
+Pillow==10.3.0
+pdf2image==1.17.0
+
+# --- Document Parsing ---
+python-docx==1.1.2
+PyMuPDF==1.24.5                 # fast PDF text extraction (fitz)
+
+# --- AI / ML ---
+transformers==4.41.2
+torch==2.3.1
+sentence-transformers==3.0.1
+faiss-cpu==1.8.0
+
+# --- Export ---
+reportlab==4.2.0
+
+# --- Email ---
+fastapi-mail==1.4.1
+
+# --- Utilities ---
+python-dotenv==1.0.1
+aiofiles==23.2.1
+slowapi==0.1.9                  # rate limiting middleware
+
+# --- Testing ---
+pytest==8.2.2
+pytest-asyncio==0.23.7
+httpx==0.27.0
